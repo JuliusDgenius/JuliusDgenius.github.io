@@ -20,6 +20,78 @@ body {
   min-height: 100vh;
 }
 
+/* Navigation Styles */
+nav {
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgba(0, 119, 204, 0.1);
+  text-decoration: underline;
+}
+
+/* Hero Section Resume Link */
+.hero a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.hero a:hover {
+  color: var(--link-color-hover);
+  text-decoration: none;
+}
+
+/* Footer Navigation */
+.page-footer a {
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+/* Responsive Navigation */
+@media (min-width: 48rem) {
+  nav {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    border-bottom: none;
+    margin: 2rem 0;
+  }
+
+  nav a {
+    padding: 0.5rem 1.5rem;
+    position: relative;
+  }
+
+  nav a:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -1rem;
+    color: #ccc;
+  }
+}
+
+/* Print Styles */
+@media print {
+  nav,
+  .page-footer nav {
+    display: none;
+  }
+  
+  .hero {
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3,
