@@ -26,4 +26,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output  # Point to generated files
+          destination_dir: ./
           keep_files: false
