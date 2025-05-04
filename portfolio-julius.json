@@ -1,0 +1,230 @@
+{
+  "name": "Julius Okwe",
+  "label": "Software Engineer",
+  "image_path": "portfolio_media/profile.JPG",
+  "contact": {
+    "email": "ibejulius1@gmail.com",
+    "phone": "07047501126",
+    "location": "Calabar"
+  },
+  "summary": "Dynamic Junior Developer with a strong foundation in software engineering and a unique background in Biochemistry. Completed the ALX Africa software engineering program and currently volunteering at a South African startup innovating waste management solutions. Specializes in backend development using NestJS, TypeScript, Prisma ORM, and PostgreSQL, with hands-on experience in Python, C, JavaScript, Bash, and DevOps. Additionally skilled in HTML, CSS, and poised to advance fullstack expertise with React. Eager to leverage diverse technical knowledge and practical experience to contribute effectively in a fullstack development role.",
+  "url": "127.0.0.1:5000",
+  "social_links": [
+    {
+      "label": "My Portfolio Website",
+      "url": "https://coreyms.com",
+      "svg_path": "img/globe.svg"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@juliusdgenius1",
+      "svg_path": "img/youtube.svg"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/juliusd_genius",
+      "svg_path": "img/instagram.svg"
+    },
+    {
+      "label": "Github",
+      "url": "https://github.com/JuliusDgenius",
+      "svg_path": "img/github.svg"
+    }
+  ],
+  "work_experience": [
+    {
+      "company": "Wastedump, Johannesburg, South Africa",
+      "position": "Software Engineer",
+      "url": "https:/wastedump.com",
+      "start_date": "2024",
+      "end_date": "present",
+      "summary": "",
+      "highlights": [
+        "Created and maintained back-end API services using NestJS.",
+        "Tasked with implementing Yoco payment gateway",
+        "Tasked with integrating email services API for system-wide transactional email feature"
+      ]
+    },
+    {
+      "company": "National Centre for Artificial Intelligence & Robotics",
+      "position": "Python with Raspberry Pi Educator",
+      "url": "https://ncair.nitda.gov.ng/",
+      "start_date": "2024",
+      "end_date": "2024",
+      "summary": "",
+      "highlights": [
+        "Guided students in Python programming by building interesting projexts with Raspberry Pi.",
+        "Provided tailored feedback to enhance coding comprehension and performance."
+      ]
+    },
+    {
+      "company": "Releaf Africa, Cross River, Nigeria.",
+      "position": "Inventory and Weighbridge Manager",
+      "url": "https://www.wereleaf.earth/",
+      "start_date": "2021",
+      "end_date": "2023",
+      "summary": "",
+      "highlights": [
+        "Managed inventory systems, optimizing material workflows and dispatch accuracy.",
+        "Led weighbridge operations, ensuring detailed tracking of raw material receipts.",
+        "Operational Oversight: Manage daily logistics operations, including transportation planning, route optimization, and timely delivery of goods.",  
+        "Weighbridge Management: Supervise weighbridge activities, ensuring precise vehicle weighing, accurate documentation, and compliance with legal standards.",  
+        "Regulatory Compliance: Safety, and environmental regulations for logistics and weighing processes.",  
+        "Record-Keeping: Maintain detailed records of shipments, weights, and transactions for audits and reporting."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Cryptocurrency Portfolio Tracker",
+      "summary": "A web application to tracker cryptocurrency portfolios. It uses crypto APIs like CoinGecko to fetch real-time updates in the crypto space. Built with NestJS, React, Chart.js, PostgreSQL and Prisma ORM",
+      "url": "https://coming-soon.com",
+      "highlights": ["It's super fast for getting updates and monitoring how your portfolios are performing."],
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Cryptocurrency Portfolio Tracker",
+      "summary": "A web application to tracker cryptocurrency portfolios. It uses crypto APIs like CoinGecko to fetch real-time updates in the crypto space. Built with NestJS, React, Chart.js, PostgreSQL and Prisma ORM",
+      "url": "https://coming-soon.com",
+      "highlights": ["It's super fast for getting updates and monitoring how your portfolios are performing."],
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Cryptocurrency Portfolio Tracker",
+      "summary": "A web application to tracker cryptocurrency portfolios. It uses crypto APIs like CoinGecko to fetch real-time updates in the crypto space. Built with NestJS, React, Chart.js, PostgreSQL and Prisma ORM",
+      "url": "https://coming-soon.com",
+      "highlights": ["It's super fast for getting updates and monitoring how your portfolios are performing."],
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    }
+  ],
+  "volunteer_experience": [
+    {
+      "organization": "First Referral Hospital, Mutum Biyu.",
+      "position": "Medical Records Officer",
+      "url": "https://thehospitalbook.com/first-referral-hospital/",
+      "start_date": "2018",
+      "end_date": "2020",
+      "summary": "Helped with medical records and information management for over 10,000 in and out patients.",
+      "highlights": []
+    },
+    {
+      "organization": "Nissis Vessels and Raphas Hands Foundations",
+      "position": "Logistics Manager",
+      "url": "https://nissi.foundation",
+      "start_date": "2018",
+      "end_date": "2018",
+      "summary": "Managed logistics and medical supplies at a free medical outreach to a Refugees camp for displaced Cameroonians in Cross River State.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Calabar",
+      "location": "Calabar, Cross River State, Nigeria.",
+      "url": "https://www.unical.edu.ng/",
+      "degrees": [
+        "Bachelor of Science in Biochemistry"
+      ],
+      "honors": [],
+      "gpa_cumulative": "4.05",
+      "gpa_major": "4.05",
+      "graduation_date": "2016"
+    },
+    {
+      "institution": "ALX Africa",
+      "location": "Nairobi, Kenya",
+      "url": "https://www.alxafrica.com/",
+      "degrees": ["Certification in Software Engineering Programme"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python, Flask",
+      "proficiency": 70,
+      "proficiency_label": "Intermediate"
+    },
+    {
+      "name": "DevOps, Linux command line",
+      "proficiency": 70,
+      "proficiency_label": "Intermediate"
+    },
+    {
+      "name": "JavaScript, HTML, CSS",
+      "proficiency": 75,
+      "proficiency_label": "Comfortable"
+    }
+  ],
+  "interests": [
+    {
+      "name": "FootBall",
+      "summary": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/ww1.jpg",
+          "caption": "Chess Board made from Walnut and Maple"
+        },
+        {
+          "img_path": "portfolio_media/ww2.jpg",
+          "caption": "Wooden Necklace from Walnut Scrap"
+        }
+      ]
+    },
+    {
+      "name": "Travelling",
+      "summary": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/ww1.jpg",
+          "caption": "Chess Board made from Walnut and Maple"
+        },
+        {
+          "img_path": "portfolio_media/ww2.jpg",
+          "caption": "Wooden Necklace from Walnut Scrap"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    "English languages"
+  ],
+  "references": []
+}
