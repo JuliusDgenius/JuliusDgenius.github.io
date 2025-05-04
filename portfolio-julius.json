@@ -1,6 +1,7 @@
 {
   "name": "Julius Okwe",
   "label": "Software Engineer",
+  "base_url": "https://juliusdgenius.github.io",
   "image_path": "portfolio_media/profile.JPG",
   "contact": {
     "email": "ibejulius1@gmail.com",
@@ -224,7 +225,24 @@
     }
   ],
   "languages": [
-    "English languages"
+    {"language" :"English languages", "fluency": "Native"}
   ],
-  "references": []
+  "references": [],
+  "nav_links": [
+    {"url": "/", "text": "Home", "is_current": true},
+    {"url": "/resume.html", "text": "Resume", "is_resume": true},
+    {"url": "#projects", "text": "Projects"},
+    {"url": "#contact", "text": "Contact"}
+],
+"resume_link": {
+    "url": "/resume.html",
+    "text": "Download PDF Resume"
+  },
+  "footer_links": [
+    {"url": "/resume.html", "text": "Resume", "is_resume": true}
+  ],
+  "contact_form": {
+    "enabled": true,
+    "submit_url": "#"
+  }
 }

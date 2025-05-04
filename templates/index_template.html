@@ -33,9 +33,9 @@
           rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/modern_normalize.css" />
-    <link rel="stylesheet" href="css/html5bp.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="..css/modern_normalize.css" />
+    <link rel="stylesheet" href="..css/html5bp.css">
+    <link rel="stylesheet" href="..css/main.css">
 
     <!-- Set a theme color that matches your website's primary color -->
     <meta name="theme-color" content="#fafafa">
@@ -52,6 +52,19 @@
 
     <!-- Content Security Policy: Uncomment to enhance security by restricting where content can be loaded from (useful for preventing certain attacks like XSS). Update if adding external sources (e.g., Google Fonts, Bootstrap CDN, analytics, etc). -->
     <!-- <meta http-equiv="Content-Security-Policy" content=" default-src 'self'; script-src 'self' code.jquery.com; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' images.examplecdn.com; "> -->
+
+    <!-- Add to head section -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ name }}",
+        "url": "{{ base_url }}",
+        "sameAs": [
+          {% for link in social_links %}"{{ link.url }}"{% if not loop.last %},{% endif %}{% endfor %}
+        ]
+      }
+      </script>
   </head>
 
   <body>
@@ -100,6 +113,13 @@
                 {% endfor %}
               </ul>
             {% endif %}
+            <!-- Add to header section after social links -->
+            <section class="hero">
+              <h1>{{ name }}, {{ label }}</h1>
+              {% if resume_link %}
+                <p>View my <a href="{{ resume_link.url }}">{{ resume_link.text }}</a></p>
+              {% endif %}
+            </section>
             {% if summary %}<p class="header-summary">{{ summary }}</p>{% endif %}
           </div>
         </div>
@@ -109,6 +129,16 @@
     <div class="page-content">
       <div class="container">
         <main>
+          <!-- Add navigation section to main content -->
+          <nav>
+            {% for item in nav_links %}
+              <a href="{{ item.url }}"
+                {% if item.is_resume %}class="resume-link"{% endif %}
+                {% if item.is_current %}aria-current="page"{% endif %}>
+                {{ item.text }}
+              </a>
+            {% endfor %}
+          </nav>
           {% if work_experience %}
             <section>
               <h2 class="section-heading">Work Experience</h2>
@@ -131,6 +161,10 @@
                     </ul>
                   {% endif %}
                 </section>
+                {% else %}
+                <div class="empty-state">
+                  <p>Work experience coming soon!</p>
+                </div>
               {% endfor %}
             </section>
           {% endif %}
@@ -211,6 +245,23 @@
                   {% endif %}
                 </section>
               {% endfor %}
+            </section>
+          {% endif %}
+          {% if contact_form.enabled %}
+            <section id="contact">
+              <h2 class="section-heading">Contact Me</h2>
+              <form action="{{ contact_form.submit_url }}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+              </form>
             </section>
           {% endif %}
         </main>
@@ -320,6 +371,11 @@
 
     <footer class="page-footer">
       <div class="container">
+        {% for item in footer_links %}
+          <a href="{{ item.url }}" {% if item.is_resume %}class="resume-link"{% endif %}>
+            {{ item.text }}
+          </a>
+        {% endfor %}
         <p>© {{ current_year }} {{ name }}. All rights reserved.</p>
       </div>
     </footer>
