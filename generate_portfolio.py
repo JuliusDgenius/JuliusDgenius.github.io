@@ -74,7 +74,3 @@ if __name__ == "__main__":
     generate_files()
     copy_assets()
     print("Generation complete!")
-
-if __name__ == "__main__":
-    generate_files()
-    print("Generation complete!")
