@@ -346,12 +346,25 @@ section {
 }
 
 .header-image {
-  width: 100%;
-  max-width: 246px;
+  /* fixed sixe */
+  width: 246px;
+  height: 246px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid #999;
+
+  object-position: center top;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+@media(min-width: 48rem) {
+  .header-image {
+    width: 192px;
+    height: 192px;
+    margin: 0;
+  }
 }
 
 .header-info ul {
