@@ -113,7 +113,7 @@
                 {% endfor %}
               </ul>
             {% endif %}
-            <!-- Add to header section after social links -->
+            <!-- Resume link in hero section -->
             <section class="hero">
               <h1>{{ name }}, {{ label }}</h1>
               {% if resume_link %}
@@ -129,7 +129,7 @@
     <div class="page-content">
       <div class="container">
         <main>
-          <!-- Add navigation section to main content -->
+          <!-- navigation section to main content -->
           <nav>
             {% for item in nav_links %}
               <a href="{{ item.url }}"
@@ -170,7 +170,7 @@
           {% endif %}
 
           {% if projects %}
-            <section>
+            <section id="project">
               <h2 class="section-heading">Projects</h2>
               {% for project in projects %}
                 <section>
