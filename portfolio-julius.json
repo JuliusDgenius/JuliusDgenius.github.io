@@ -227,7 +227,20 @@
   "languages": [
     {"language" :"English languages", "fluency": "Native"}
   ],
-  "references": [],
+  "references": [
+    {
+      "reference": "Mr. Zakhele Shigonwe",
+      "company": "Wance Pty",
+      "position": "Founder/CEO",
+      "email": "zakhele@wastedump.co.za"
+    },
+    {
+      "reference": "Benjamin",
+      "company": "Wance Pty",
+      "position": "Lead Engineer",
+      "email": "benjamin@wastedump.co.za"
+    }
+  ],
   "nav_links": [
     {"url": "/", "text": "Home", "is_current": true},
     {"url": "/resume.html", "text": "Resume", "is_resume": true},
