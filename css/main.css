@@ -347,7 +347,7 @@ section {
 
 .header-image {
   width: 100%;
-  max-width: 256px;
+  max-width: 246px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
