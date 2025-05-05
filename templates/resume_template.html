@@ -60,6 +60,9 @@
       <div class="container">
         <div class="header-top flex-responsive">
           <div class="header-info">
+            <a href="{{ base_url }}/index.html" class="back-button">
+              ← Back to Portfolio
+            </a>
             <h1>{{ name }}</h1>
             {% if contact.email or contact.phone or contact.location %}
               <address>
@@ -149,6 +152,9 @@
                   {% endif %}
                   {% if ref.email %}
                     <p><a href="mailto:{{ ref.email }}">{{ ref.email }}</a></p>
+                  {% endif %}
+                  {% if ref.phone_no %}
+                    <p>{{ ref.phone_no }}</p>
                   {% endif %}
                 </section>
               {% endfor %}

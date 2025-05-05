@@ -232,13 +232,15 @@
       "name": "Mr. Zakhele Shigonwe",
       "company": "Wance Pty",
       "position": "Founder/CEO",
-      "email": "zakhele@wastedump.co.za"
+      "email": "zakhele@wastedump.co.za",
+      "phone_no": "07047501126"
     },
     {
       "name": "Benjamin",
       "company": "Wance Pty",
       "position": "Lead Engineer",
-      "email": "benjamin@wastedump.co.za"
+      "email": "benjamin@wastedump.co.za",
+      "phone_no": "07047501126"
     }
   ],
   "nav_links": [
