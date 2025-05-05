@@ -247,7 +247,8 @@
     {"url": "/", "text": "Home", "is_current": true},
     {"url": "/resume.html", "text": "Resume", "is_resume": true},
     {"url": "#projects", "text": "Projects"},
-    {"url": "#contact", "text": "Contact"}
+    {"url": "#contact", "text": "Contact"},
+    {"url": "#experience", "text": "Work Experience"}
 ],
 "resume_link": {
     "url": "/resume.html",
