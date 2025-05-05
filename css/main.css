@@ -193,6 +193,30 @@ nav a:hover {
   }
 }
 
+/* About Section */
+#about {
+  margin: 2rem 0;
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+#about p {
+  font-size: 1rem;
+  color: #444;
+}
+
+@media (max-width: 48rem) {
+  #about {
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+  }
+  
+  #about p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
 /* Empty state styling */
 .empty-state {
   padding: 2rem;
@@ -305,7 +329,7 @@ section {
 /* Summary bullet styling */
 .summary-list {
   list-style: none;
-  padding-left: 1.2rem;
+  padding-left: 2rem;
   margin: 1rem 0;
 }
 
@@ -314,12 +338,29 @@ section {
   color: var(--link-color);
   position: absolute;
   left: 1rem;
+  margin-right: 0.5rem;
 }
 
 .summary-list li {
   position: relative;
   margin-bottom: 0.5rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
+}
+
+@media (max-width: 48rem) {
+  .summary-list {
+    padding-left: 1rem;
+  }
+  
+  .summary-list li {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .summary-list li::before {
+    left: 0.25rem;
+    font-size: 0.9em;
+  }
 }
 
 /* Back button styling */
@@ -720,5 +761,20 @@ blockquote {
   body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+  }
+}
+
+@media (max-width: 48rem) {
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
   }
 }

@@ -257,6 +257,7 @@
   "nav_links": [
     {"url": "/", "text": "Home", "is_current": true},
     {"url": "/resume.html", "text": "Resume", "is_resume": true},
+    {"url": "#about", "text": "About"},
     {"url": "#projects", "text": "Projects"},
     {"url": "#contact", "text": "Contact"},
     {"url": "#experience", "text": "Work Experience"}
