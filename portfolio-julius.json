@@ -229,13 +229,13 @@
   ],
   "references": [
     {
-      "reference": "Mr. Zakhele Shigonwe",
+      "name": "Mr. Zakhele Shigonwe",
       "company": "Wance Pty",
       "position": "Founder/CEO",
       "email": "zakhele@wastedump.co.za"
     },
     {
-      "reference": "Benjamin",
+      "name": "Benjamin",
       "company": "Wance Pty",
       "position": "Lead Engineer",
       "email": "benjamin@wastedump.co.za"

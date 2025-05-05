@@ -253,8 +253,16 @@
               {% for ref in references %}
                 <section>
                   {% if ref.name %}<h3>{{ ref.name }}</h3>{% endif %}
-                  {% if ref.relation %}<p class="section-label">{{ ref.relation }}</p>{% endif %}
+                  {% if ref.position or ref.company %}
+                    <p class="section-label">
+                      {% if ref.position %}{{ ref.position }}{% endif %}
+                      {% if ref.company %}{% if ref.position %} at { %endif %} {{ ref.company }} {% endif %}
+                    </p>
+                  {% endif %}
                   {% if ref.reference %}
+                  {% if ref.email %}
+                    <p><a href="mailto=:{{ ref.email }}"></a></p>
+                  {% endif %}
                     <blockquote>
                       {{ ref.reference }}
                     </blockquote>
