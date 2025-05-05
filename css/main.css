@@ -302,6 +302,26 @@ section {
   margin-bottom: 1.5rem;
 }
 
+/* Summary bullet styling */
+.summary-list {
+  list-style: none;
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+}
+
+.summary-list li::before {
+  content: "▹";
+  color: var(--link-color);
+  position: absolute;
+  left: 1rem;
+}
+
+.summary-list li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
 /* Back button styling */
 .back-button {
   display: inline-flex;
