@@ -51,6 +51,67 @@ nav a:hover {
   text-decoration: none;
 }
 
+/* Contact Form Styles */
+/* Contact Section */
+#contact {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--blockquote-bg-color);
+  border-left: 4px solid var(--aside-accent-color);
+  border-radius: 4px;
+}
+
+#contact form {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--blockquote-text-color);
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+#contact button {
+  justify-self: start;
+  padding: 0.8rem 2.5rem;
+  background: var(--link-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#contact button:hover {
+  background: var(--link-color-hover);
+}
+
+/* Mobile Optimization */
+@media (max-width: 47.99rem) {
+  #contact {
+    margin: 2rem 0;
+    padding: 1.5rem;
+  }
+  
+  #contact form {
+    gap: 1rem;
+  }
+}
+
 /* Footer Navigation */
 .page-footer a {
   margin: 0 1rem;
@@ -112,9 +173,24 @@ nav a:hover {
 /* Resume link emphasis */
 .resume-link {
   font-weight: 600;
-  border: 2px solid var(--link-color);
-  padding: 0.5rem 1rem;
+  background: var(--link-color);
+  color: white !important;
+  padding: 0.5rem 1.25rem;
   border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.resume-link:hover {
+  background: var(--link-color-hover);
+  text-decoration: none;
+}
+
+@media (max-width: 48rem) {
+  .resume-link {
+    border: none;
+    background: none;
+    color: var(--link-color) !important;
+  }
 }
 
 /* Empty state styling */
