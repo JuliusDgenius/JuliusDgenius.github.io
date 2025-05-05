@@ -188,7 +188,7 @@ nav a:hover {
 @media (max-width: 48rem) {
   .resume-link {
     border: none;
-    background: none;
+    background: var(--link-color);
     color: var(--link-color) !important;
   }
 }
