@@ -256,7 +256,7 @@
                   {% if ref.position or ref.company %}
                     <p class="section-label">
                       {% if ref.position %}{{ ref.position }}{% endif %}
-                      {% if ref.company %}{% if ref.position %} at { %endif %}{{ ref.company }}{% endif %}
+                      {% if ref.company %}{% if ref.position %} at {% endif %}{{ ref.company }}{% endif %}
                     </p>
                   {% endif %}
                   {% if ref.reference %}
