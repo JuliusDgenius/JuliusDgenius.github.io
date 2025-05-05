@@ -81,7 +81,19 @@
                 </ul>
               </address>
             {% endif %}
-            {% if summary %}<p class="header-summary">{{ summary }}</p>{% endif %}
+            {% if summary %}
+              <div class="header-summary">
+                {% if summary.type == "bullets" %}
+                  <ul class="summary-list">
+                    {% for point in summary.content %}
+                      <li>{{ point }}</li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <p>{{ summary.content }}</p>
+                {% endif %}
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>

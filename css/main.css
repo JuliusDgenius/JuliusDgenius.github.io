@@ -1,4 +1,164 @@
 :root {
+  /* Color Variables */
+  --link-color: #0077cc;
+  --link-color-hover: #00487c;
+  --header-footer-bg-color: #f0f0f0;
+  --aside-accent-color: #9d836b;
+  --skill-bar-fill-color: #f3e4c6;
+  --blockquote-bg-color: #f7fafc;
+  --blockquote-accent-color: #4a5568;
+  --blockquote-text-color: #4a5568;
+  --spacing-inline: 0.5rem;
+}
+
+/* Base Layout & Typography */
+body {
+  font-family: "Nunito", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Header Section Fixes */
+.page-header .container {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.header-info {
+  flex: 1;
+  min-width: 0; /* Prevent flex overflow */
+}
+
+.header-image {
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 1px solid #999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+/* Summary List Fixes */
+.summary-list {
+  list-style: none;
+  padding-left: 2rem;
+  margin: 1rem 0;
+  max-height: 300px; /* Prevent excessive height */
+  overflow-y: auto; /* Enable scroll if needed */
+}
+
+.summary-list li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+  break-inside: avoid; /* Prevent list item breaks */
+}
+
+.summary-list li::before {
+  content: "▹";
+  color: var(--link-color);
+  position: absolute;
+  left: 1rem;
+}
+
+/* Navigation Bar Fixes */
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 48rem) {
+  /* Summary Adjustments */
+  .summary-list {
+    max-height: 200px;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .summary-list li {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .summary-list li::before {
+    left: 0.25rem;
+  }
+
+  /* Navigation Adjustments */
+  nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  nav a {
+    flex: 1 1 45%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  nav a::after {
+    content: none !important;
+  }
+
+  /* Header Image Adjustments */
+  .header-image {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+  }
+
+  /* Typography Adjustments */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Desktop Layout */
+@media (min-width: 48rem) {
+  .header-image {
+    width: 220px;
+    height: 220px;
+    min-width: 220px;
+    margin: 0 2rem 0 0;
+  }
+
+  .page-content .container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  nav {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+}
+
+/* Existing styles below remain unchanged... */
+
+:root {
   --link-color: #0077cc;
   --link-color-hover: #00487c;
   --header-footer-bg-color: #f0f0f0;
@@ -329,7 +489,7 @@ section {
 /* Summary bullet styling */
 .summary-list {
   list-style: none;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   margin: 1rem 0;
 }
 
@@ -337,7 +497,7 @@ section {
   content: "▹";
   color: var(--link-color);
   position: absolute;
-  left: 0.5rem;
+  left: 1rem;
   margin-right: 0.5rem;
 }
 
