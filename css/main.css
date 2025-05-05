@@ -189,7 +189,7 @@ nav a:hover {
   .resume-link {
     border: none;
     background: var(--link-color);
-    color: var(--link-color) !important;
+    color: white var(--link-color) !important;
   }
 }
 
