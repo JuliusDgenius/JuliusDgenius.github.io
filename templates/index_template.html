@@ -117,7 +117,7 @@
             <section class="hero">
               <h1>{{ name }}, {{ label }}</h1>
               {% if resume_link %}
-                <p>View my <a href="{{ resume_link.url }}">{{ resume_link.text }}</a></p>
+                <p><a href="{{ resume_link.url }}">{{ resume_link.text }}</a></p>
               {% endif %}
             </section>
             {% if summary %}<p class="header-summary">{{ summary }}</p>{% endif %}
@@ -204,7 +204,23 @@
               {% endfor %}
             </section>
           {% endif %}
-
+          {% if contact_form.enabled %}
+            <section id="contact">
+              <h2 class="section-heading">Contact Me</h2>
+              <form action="{{ contact_form.submit_url }}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+              </form>
+            </section>
+          {% endif %}
           {% if volunteer_experience %}
             <section>
               <h2 class="section-heading">Volunteer Experience</h2>
@@ -245,23 +261,6 @@
                   {% endif %}
                 </section>
               {% endfor %}
-            </section>
-          {% endif %}
-          {% if contact_form.enabled %}
-            <section id="contact">
-              <h2 class="section-heading">Contact Me</h2>
-              <form action="{{ contact_form.submit_url }}" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send Message</button>
-              </form>
             </section>
           {% endif %}
         </main>

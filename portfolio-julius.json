@@ -201,11 +201,11 @@
       "images": [
         {
           "img_path": "portfolio_media/ronaldo.jpeg",
-          "caption": "Chess Board made from Walnut and Maple"
+          "caption": "Ronaldo on the Ball"
         },
         {
           "img_path": "portfolio_media/osimen.jpeg",
-          "caption": "Wooden Necklace from Walnut Scrap"
+          "caption": "Osimen on the Ball"
         }
       ]
     },
@@ -215,11 +215,11 @@
       "images": [
         {
           "img_path": "portfolio_media/traveller1.jpeg",
-          "caption": "Chess Board made from Walnut and Maple"
+          "caption": "A Lone Traveller"
         },
         {
           "img_path": "portfolio_media/traveller2.jpeg",
-          "caption": "Wooden Necklace from Walnut Scrap"
+          "caption": "A travelling Couple"
         }
       ]
     }
