@@ -120,9 +120,21 @@
                 <p><a href="{{ resume_link.url }}">{{ resume_link.text }}</a></p>
               {% endif %}
             </section>
-            {% if summary %}<p class="header-summary">{{ summary }}</p>{% endif %}
+            {% if summary %}
+              <div class="header-summary">
+                {% if summary.type == "bullets" %}
+                  <ul class="summary-list">
+                    {% for point in summary.content %}
+                      <li>{{ point }}</li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <p>{{ summary.content }}</p>
+                {% endif %}
+              </div>
+            {% endif %}
+            </div>
           </div>
-        </div>
       </div>
     </header>
 
@@ -139,6 +151,12 @@
               </a>
             {% endfor %}
           </nav>
+          {% if about %}
+            <section id="#about">
+              <h2 class="section-heading">About</h2>
+              {{ about }}
+            </section>
+          {% endif %}
           {% if work_experience %}
             <section id="experience">
               <h2 class="section-heading">Work Experience</h2>
