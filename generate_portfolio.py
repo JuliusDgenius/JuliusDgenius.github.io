@@ -1,13 +1,33 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from jinja2 import Environment, FileSystemLoader  # <-- Add this import
+from jinja2 import Environment, FileSystemLoader
+from weasyprint import HTML
 import shutil
+import sys
+import subprocess
+import os
 
 # Configuration
 TEMPLATE_DIR = Path("templates")
 OUTPUT_DIR = Path("output")
 DATA_FILE = Path("portfolio-julius.json")
+
+def generate_resume_pdf():
+    """Generate a PDF version of the resume from the HTML."""
+    html_path = OUTPUT_DIR / "resume.html"
+    pdf_path = OUTPUT_DIR / "resume.pdf"
+    if html_path.exists():
+        HTML(filename=str(html_path)).write_pdf(str(pdf_path))
+    else:
+        print("Resume HTML not found; cannot generate PDF.")
+
+# def copy_resume_pdf():
+#     src = OUTPUT_DIR / "resume.pdf"
+#     dest = OUTPUT_DIR / "resume.pdf"
+#     dest.parent.mkdir(parents=True, exist_ok=True)
+#     if src.exists():
+#         shutil.copy2(src, dest)
 
 def load_data():
     with DATA_FILE.open(encoding="utf-8") as f:
@@ -73,4 +93,5 @@ def copy_assets():
 if __name__ == "__main__":
     generate_files()
     copy_assets()
-    print("Generation complete!")
+    generate_resume_pdf()
+    # copy_resume_pdf()

@@ -1,2 +1,16 @@
-Jinja2==3.1.4
+Brotli==1.1.0
+cffi==1.17.1
+cssselect2==0.7.0
+fonttools==4.57.0
+html5lib==1.1
+jinja2==3.1.4
 MarkupSafe==2.1.5
+pillow==10.4.0
+pycparser==2.22
+pydyf==0.11.0
+pyphen==0.16.0
+six==1.17.0
+tinycss2==1.4.0
+weasyprint==61.2
+webencodings==0.5.1
+zopfli==0.2.3.post1
