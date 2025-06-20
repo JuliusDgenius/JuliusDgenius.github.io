@@ -24,7 +24,7 @@ def generate_resume_pdf():
 
 def copy_resume_pdf():
     src = OUTPUT_DIR / "resume.pdf"
-    dest = Path("resume.pdf")
+    dest = OUTPUT_DIR / "resume.pdf"
     dest.parent.mkdir(parents=True, exist_ok=True)
     if src.exists():
         shutil.copy2(src, dest)
@@ -94,4 +94,4 @@ if __name__ == "__main__":
     generate_files()
     copy_assets()
     generate_resume_pdf()
-    # copy_resume_pdf()
+    copy_resume_pdf()
