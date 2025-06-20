@@ -16,18 +16,18 @@ DATA_FILE = Path("portfolio-julius.json")
 def generate_resume_pdf():
     """Generate a PDF version of the resume from the HTML."""
     html_path = OUTPUT_DIR / "resume.html"
-    pdf_path = OUTPUT_DIR / "resume.pdf"
+    pdf_path = Path("resume.pdf")
     if html_path.exists():
         HTML(filename=str(html_path)).write_pdf(str(pdf_path))
     else:
         print("Resume HTML not found; cannot generate PDF.")
 
-# def copy_resume_pdf():
-#     src = OUTPUT_DIR / "resume.pdf"
-#     dest = OUTPUT_DIR / "resume.pdf"
-#     dest.parent.mkdir(parents=True, exist_ok=True)
-#     if src.exists():
-#         shutil.copy2(src, dest)
+def copy_resume_pdf():
+    src = OUTPUT_DIR / "resume.pdf"
+    dest = Path("resume.pdf")
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if src.exists():
+        shutil.copy2(src, dest)
 
 def load_data():
     with DATA_FILE.open(encoding="utf-8") as f:
