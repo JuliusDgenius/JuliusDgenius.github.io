@@ -17,9 +17,7 @@
   }
 
   .header-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
   
   .page-header h1 {
@@ -33,32 +31,27 @@
   
   /* Contact info styling */
   address ul.inline-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
+    display: block;
+    text-align: center;
     margin: 0.75em 0;
     padding: 0;
   }
   
   address ul.inline-list li {
-    display: block;
-    padding: 0;
+    display: inline;
+    padding: 0 0.5em;
   }
   
   address ul.inline-list li:not(:last-child)::after {
-    content: "";
-    margin-left: 0;
+    content: "|";
+    margin-left: 0.5em;
   }
 
   /* Summary section improvements */
 .header-summary {
     margin-top: 1em;
-    text-align: left;
+    text-align: justify;
     width: 100%;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .header-summary p {
