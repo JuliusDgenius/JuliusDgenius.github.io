@@ -2,7 +2,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-from weasyprint import HTML
+from weasyprint import HTML, CSS
 import shutil
 import sys
 import subprocess
@@ -17,8 +17,13 @@ def generate_resume_pdf():
     """Generate a PDF version of the resume from the HTML."""
     html_path = OUTPUT_DIR / "resume.html"
     pdf_path = OUTPUT_DIR / "resume.pdf"
+    print_css_path = Path("css/resume_print.css")
     if html_path.exists():
-        HTML(filename=str(html_path)).write_pdf(str(pdf_path))
+        html = HTML(filename=str(html_path))
+        stylesheets = []
+        if print_css_path.exists():
+            stylesheets.append(CSS(filename=str(print_css_path)))
+        html.write_pdf(str(pdf_path), stylesheets=stylesheets)
     else:
         print("Resume HTML not found; cannot generate PDF.")
 

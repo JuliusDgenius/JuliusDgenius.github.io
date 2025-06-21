@@ -1,0 +1,73 @@
+/* css/resume_print.css */
+
+@page {
+  size: letter;
+  margin: 0.75in;
+}
+
+body {
+  background: #fff;
+  font-size: 10pt;
+  color: #000;
+}
+
+.page-header h1 {
+  font-size: 2em;
+}
+
+/* Override grid layout to a single column */
+.page-content .container {
+  display: block;
+}
+
+main,
+aside {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+}
+
+/* Ensure header content is laid out simply */
+.header-top {
+  display: block;
+  text-align: left;
+}
+
+.flex-responsive {
+  display: block;
+  text-align: left;
+}
+
+.inline-list {
+    display: block;
+    padding-left: 0;
+}
+
+.inline-list li {
+    display: block;
+    padding: 2px 0;
+}
+
+.inline-list li:not(:last-child)::after {
+    content: ""; /* Remove pipe separator */
+}
+
+/* Hide elements not needed for PDF */
+.back-button,
+.page-header button {
+  display: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Show URL in parenthesis for links in PDF */
+a[href^="http"]::after,
+a[href^="https"]::after {
+  content: " (" attr(href) ")";
+  font-size: 0.8em;
+  color: #333;
+} 
