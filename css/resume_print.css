@@ -11,20 +11,33 @@
     color: #000;
     background: #fff;
   }
+
+  .page-header {
+    text-align: center;
+  }
+
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   .page-header h1 {
     font-size: 24pt;
     margin-bottom: 0.25em;
     border-bottom: 2px solid #333;
     padding-bottom: 0.2em;
+    text-align: center;
+    width: 100%;
   }
   
   /* Contact info styling */
   address ul.inline-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1em;
-    margin: 0.5em 0;
+    margin: 0.75em 0;
     padding: 0;
   }
   
@@ -35,7 +48,46 @@
   
   address ul.inline-list li:not(:last-child)::after {
     content: "";
+    margin-left: 0;
   }
+
+  /* Summary section improvements */
+.header-summary {
+    margin-top: 1em;
+    text-align: left;
+    width: 100%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-summary p {
+    margin: 0.5em 0;
+    line-height: 1.5;
+  }
+  
+  /* Summary list styling */
+  .summary-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0.5em 0;
+  }
+
+  .summary-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+    page-break-inside: avoid;
+  }
+  
+  .summary-list li::before {
+    content: "►";
+    position: absolute;
+    left: 0;
+    font-size: 0.9em;
+    color: #333;
+  }  
   
   /* Section styling */
   .section-heading {
