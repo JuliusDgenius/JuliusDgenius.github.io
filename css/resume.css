@@ -116,6 +116,13 @@ aside h6 {
   margin-top: 1em;
 }
 
+/* Summary improvements */
+.header-summary ul {
+  display: inline-block;
+  text-align: left;
+  max-width: 800px;
+}
+
 /* Contact info - horizontal layout */
 address ul.inline-list {
   display: flex;
