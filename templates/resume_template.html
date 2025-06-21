@@ -180,6 +180,21 @@
 
         <!-- Sidebar Section -->
         <aside>
+          {% if education %}  <!-- Add this new section -->
+            <section>
+              <h2 class="section-heading">Education</h2>
+              {% for edu in education %}
+                <section>
+                  <h3>{{ edu.institution }}</h3>
+                  <p class="section-label">{{ edu.degree }}, {{ edu.field_of_study }}</p>
+                  {% if edu.start_date and edu.end_date %}
+                    <p class="section-label">{{ edu.start_date }} - {{ edu.end_date }}</p>
+                  {% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+
           {% if languages %}
             <section>
               <h2 class="section-heading">Languages</h2>
