@@ -108,10 +108,10 @@
       ]
     },
     {
-      "title": "Cryptocurrency Portfolio Tracker",
-      "summary": "A web application to tracker cryptocurrency portfolios. It uses crypto APIs like CoinGecko to fetch real-time updates in the crypto space. Built with NestJS, React, Chart.js, PostgreSQL and Prisma ORM",
+      "title": "A Text Editor Written in C",
+      "summary": "",
       "url": "https://coming-soon.com",
-      "highlights": ["It's super fast for getting updates and monitoring how your portfolios are performing."],
+      "highlights": ["Zero external dependencies."],
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "title": "Cryptocurrency Portfolio Tracker",
+      "title": "A Blog Website Written in Python/Flask",
       "summary": "A web application to tracker cryptocurrency portfolios. It uses crypto APIs like CoinGecko to fetch real-time updates in the crypto space. Built with NestJS, React, Chart.js, PostgreSQL and Prisma ORM",
       "url": "https://coming-soon.com",
       "highlights": ["It's super fast for getting updates and monitoring how your portfolios are performing."],
