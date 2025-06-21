@@ -185,7 +185,11 @@
       "institution": "ALX Africa",
       "location": "Nairobi, Kenya",
       "url": "https://www.alxafrica.com/",
-      "degrees": ["Certification in Software Engineering Programme"]
+      "degrees": ["Certification in Software Engineering Programme"],
+      "honors": [],
+      "gpa_cumulative": "",
+      "gpa_major": "",
+      "graduation_date": "2025"
     }
   ],
   "skills": [
