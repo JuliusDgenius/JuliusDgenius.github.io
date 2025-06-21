@@ -85,7 +85,7 @@
                 </ul>
               </address>
             {% endif %}
-            {% if summary %}
+            <!-- {% if summary %}
               <div class="header-summary">
                 {% if summary.type == "bullets" %}
                   <ul class="summary-list">
@@ -97,6 +97,12 @@
                   <p>{{ summary.content }}</p>
                 {% endif %}
               </div>
+            {% endif %} -->
+            {% if about %}
+              <section id="about">
+                <h2 class="section-heading">About</h2>
+                {{ about }}
+              </section>
             {% endif %}
           </div>
         </div>
