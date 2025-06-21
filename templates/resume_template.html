@@ -78,7 +78,7 @@
                   {% endif %}
                   {% if contact.phone %}
                     <li>
-                      <a href="tel:+{{ contact.phone | replace('-', '') }}">{{ contact.phone }}</a>
+                      {{ contact.phone }}
                     </li>
                   {% endif %}
                   {% if contact.location %}<li>{{ contact.location }}</li>{% endif %}
@@ -107,7 +107,7 @@
       <div class="container">
         <main>
           {% if work_experience %}
-            <section>
+            <section id="work-experience">
               <h2 class="section-heading">Work Experience</h2>
               {% for job in work_experience %}
                 <section>
@@ -133,7 +133,7 @@
           {% endif %}
 
           {% if projects %}
-            <section>
+            <section id="projects">
               <h2 class="section-heading">Projects</h2>
               {% for project in projects %}
                 <section>
@@ -155,7 +155,7 @@
             </section>
           {% endif %}
           {% if references %}
-            <section>
+            <section id="references">
               <h2 class="section-heading">References</h2>
               {% for ref in references %}
                 <section>
@@ -195,7 +195,7 @@
           {% endif %}
 
           {% if volunteer_experience %}
-            <section>
+            <section id="volunteer-experience">
               <h2 class="section-heading">Volunteer Experience</h2>
               {% for vol in volunteer_experience %}
                 <section>

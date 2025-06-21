@@ -18,12 +18,19 @@ def generate_resume_pdf():
     html_path = OUTPUT_DIR / "resume.html"
     pdf_path = OUTPUT_DIR / "resume.pdf"
     print_css_path = Path("css/resume_print.css")
+    screen_css_path = Path("css/resume.css")
     if html_path.exists():
         html = HTML(filename=str(html_path))
         stylesheets = []
         if print_css_path.exists():
             stylesheets.append(CSS(filename=str(print_css_path)))
-        html.write_pdf(str(pdf_path), stylesheets=stylesheets)
+        if screen_css_path.exists():
+            stylesheets.append(CSS(filename=str(screen_css_path)))
+        html.write_pdf(
+            str(pdf_path),
+            stylesheets=stylesheets,
+            presentational_hints=True
+            )
     else:
         print("Resume HTML not found; cannot generate PDF.")
 
