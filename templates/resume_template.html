@@ -188,8 +188,14 @@
                   <h3>{{ edu.institution }}</h3>
                   {% if edu.degrees %}
                     {% for degree in edu.degrees %}
-                      <p class="section-label">{{ degree }}</p>
+                      <p class="section-label">Honour: {{ degree }}</p>
                     {% endfor %}
+                  {% endif %}
+                  {% if edu.location %}
+                    <p class="section-label">Location: {{ edu.location }}</p>
+                  {% endif %}
+                  {% if edu.url %}
+                    <p class="section-label">{{ edu.url }}</p>
                   {% endif %}
                   {% if edu.graduation_date %}
                     <p class="section-label">Graduation Date: {{ edu.graduation_date }}</p>
