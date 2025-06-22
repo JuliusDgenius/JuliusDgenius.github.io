@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }).then(response => {
         if (response.ok) {
+          // Reset the form to clear the user's input
+          contactForm.reset();
           // Show a success message
           contactSection.innerHTML = '<h2 class="section-heading">Thank You!</h2><p>Your message has been sent successfully. I will get back to you shortly.</p>';
         } else {
