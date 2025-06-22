@@ -113,12 +113,25 @@
     margin-bottom: 0.25em;
   }
   
-  /* Two-column layout for main content */
+  /* Single-column layout for print with explicit section ordering */
   .page-content .container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1.5em;
+    grid-template-columns: 1fr;
+    gap: 1em;
   }
+  
+  main,
+  aside {
+    display: contents; /* Makes sections direct children of the grid container */
+  }
+  
+  /* Define the order for each section */
+  #work-experience { grid-row: 1; }
+  #volunteer-experience { grid-row: 2; }
+  #projects { grid-row: 3; }
+  #education-section { grid-row: 4; }
+  #languages { grid-row: 5; }
+  #references { grid-row: 6; }
   
   /* Hide unnecessary elements */
   .back-button,
