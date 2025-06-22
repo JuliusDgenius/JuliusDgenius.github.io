@@ -4,6 +4,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML, CSS
 import shutil
+import os
 
 # Configuration
 TEMPLATE_DIR = Path("templates")
@@ -73,6 +74,36 @@ def copy_assets():
             shutil.copytree(src, dest)
     print("Copied static assets to output directory.")
 
+def cleanup_backups(directory: Path, keep: int = 5):
+    """
+    Deletes old backup files in a directory, keeping only a specified number of the most recent ones.
+    """
+    # Find all backup files using glob
+    backup_files = sorted(
+        directory.glob('*.bak*'),
+        key=os.path.getmtime,
+        reverse=True
+    )
+
+    # Check if there are more files than we want to keep
+    if len(backup_files) > keep:
+        # Determine which files to delete
+        files_to_delete = backup_files[keep:]
+
+        print(f"Found {len(backup_files)} backup files. Deleting {len(files_to_delete)} oldest files...")
+
+        # Delete the old files
+        for f in files_to_delete:
+            try:
+                f.unlink()
+                print(f"  - Deleted {f.name}")
+            except OSError as e:
+                print(f"Error deleting file {f.name}: {e}")
+
+        print("Backup cleanup complete.")
+    else:
+        print(f"Found {len(backup_files)} backup files. No cleanup needed.")
+
 if __name__ == "__main__":
     # Initialize Jinja2 environment
     jinja_env = Environment(
@@ -96,3 +127,6 @@ if __name__ == "__main__":
     
     # Copy the final PDF to the project root
     copy_resume_pdf()
+
+    # Clean up old backup files
+    cleanup_backups(OUTPUT_DIR)
