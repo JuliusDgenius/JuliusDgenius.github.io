@@ -4,50 +4,38 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML, CSS
 import shutil
-import sys
-import subprocess
-import os
 
 # Configuration
 TEMPLATE_DIR = Path("templates")
 OUTPUT_DIR = Path("output")
 DATA_FILE = Path("portfolio-julius.json")
 
-def generate_resume_pdf():
-    """Generate a PDF version of the resume from the HTML."""
-    html_path = OUTPUT_DIR / "resume.html"
+def generate_resume_pdf(env, data):
+    """Generate a PDF version of the resume from a print-specific HTML template."""
+    print_template = env.get_template("resume_print.html")
+    # The base_url is important for weasyprint to find the CSS files
+    html_content = print_template.render(**data)
+    html = HTML(string=html_content, base_url=str(Path.cwd()))
+    
     pdf_path = OUTPUT_DIR / "resume.pdf"
-    print_css_path = Path("css/resume_print.css")
-    screen_css_path = Path("css/resume.css")
-    if html_path.exists():
-        html = HTML(filename=str(html_path))
-        stylesheets = []
-        if print_css_path.exists():
-            stylesheets.append(CSS(filename=str(print_css_path)))
-        if screen_css_path.exists():
-            stylesheets.append(CSS(filename=str(screen_css_path)))
-        html.write_pdf(
-            str(pdf_path),
-            stylesheets=stylesheets,
-            presentational_hints=True
-            )
-    else:
-        print("Resume HTML not found; cannot generate PDF.")
+    
+    html.write_pdf(target=pdf_path)
+    print(f"Successfully generated {pdf_path}")
 
 def copy_resume_pdf():
     src = OUTPUT_DIR / "resume.pdf"
-    dest = Path("resume.pdf")
-    dest.parent.mkdir(parents=True, exist_ok=True)
     if src.exists():
-        shutil.copy2(src, dest)
+        shutil.copy2(src, Path("resume.pdf"))
+        print(f"Copied {src} to project root.")
 
 def load_data():
+    """Loads portfolio data and adds generated context."""
     with DATA_FILE.open(encoding="utf-8") as f:
         data = json.load(f)
     
     data.update({
         "current_year": datetime.now(tz=timezone.utc).year,
-        "generated_at": datetime.now().isoformat()
+        "base_url": "file://" + str(Path.cwd() / OUTPUT_DIR)
     })
     
     if "social_links" in data:
@@ -58,17 +46,8 @@ def load_data():
                     link["svg_data"] = svg_path.read_text(encoding="utf-8")
     return data
 
-def generate_files():
-    # Initialize Jinja2 environment
-    env = Environment(  # <-- Properly declared env variable
-        loader=FileSystemLoader(TEMPLATE_DIR),
-        autoescape=True,
-        trim_blocks=True,
-        lstrip_blocks=True
-    )
-    
-    data = load_data()
-    
+def generate_files(env, data):
+    """Generates the main HTML files (index and on-screen resume)."""
     OUTPUT_DIR.mkdir(exist_ok=True)
     
     templates = {
@@ -79,20 +58,11 @@ def generate_files():
     for template_name, output_name in templates.items():
         template = env.get_template(template_name)
         output_path = OUTPUT_DIR / output_name
-        
-        if output_path.exists():
-            backup = output_path.with_suffix(f".bak{datetime.now().strftime('%Y%m%d%H%M%S')}")
-            try:
-                output_path.rename(backup)
-            except FileNotFoundError:
-                print(f"Could not backup {output_path}")
-        
-        with output_path.open("w", encoding="utf-8") as f:
-            f.write(template.render(**data))
+        output_path.write_text(template.render(**data), encoding="utf-8")
+        print(f"Generated {output_path}")
 
-# Add this after generating files
 def copy_assets():
-    """Copy static assets to output directory"""
+    """Copies static assets to the output directory."""
     assets = ['css', 'js', 'portfolio_media', 'img']
     for asset in assets:
         src = Path(asset)
@@ -101,9 +71,28 @@ def copy_assets():
             if dest.exists():
                 shutil.rmtree(dest)
             shutil.copytree(src, dest)
+    print("Copied static assets to output directory.")
 
 if __name__ == "__main__":
-    generate_files()
+    # Initialize Jinja2 environment
+    jinja_env = Environment(
+        loader=FileSystemLoader(TEMPLATE_DIR),
+        autoescape=True,
+        trim_blocks=True,
+        lstrip_blocks=True
+    )
+    
+    # Load data
+    portfolio_data = load_data()
+    
+    # Generate on-screen HTML files
+    generate_files(jinja_env, portfolio_data)
+    
+    # Copy static assets
     copy_assets()
-    generate_resume_pdf()
+    
+    # Generate the PDF from the print-specific template
+    generate_resume_pdf(jinja_env, portfolio_data)
+    
+    # Copy the final PDF to the project root
     copy_resume_pdf()
