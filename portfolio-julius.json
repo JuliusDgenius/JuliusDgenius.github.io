@@ -275,6 +275,6 @@
   ],
   "contact_form": {
     "enabled": true,
-    "submit_url": "#"
+    "submit_url": "https://formspree.io/f/meokrjok"
   }
 }
