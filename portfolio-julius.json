@@ -89,9 +89,17 @@
   "projects": [
     {
       "title": "Cryptocurrency Portfolio Tracker",
-      "summary": "A web application to tracker cryptocurrency portfolios. It uses crypto APIs like CoinGecko to fetch real-time updates in the crypto space. Built with NestJS, React, Chart.js, PostgreSQL and Prisma ORM",
+      "summary": "Designed and developed a full-stack cryptocurrency portfolio management application for real-time investment tracking. Tech Stack: React, NestJS, TypeScript, MongoDB, Redis, Docker, Material UI, Chart.js, BullMQ, Jest.",
       "url": "https://coming-soon.com",
-      "highlights": ["It's super fast for getting updates and monitoring how your portfolios are performing."],
+      "highlights": [
+        "Built a modern, responsive frontend using React and Material UI, featuring interactive data visualizations with Chart.js and Recharts for portfolio performance, asset allocation, and historical analysis.",
+        "Engineered a robust backend with NestJS and TypeScript, implementing secure JWT-based authentication, role-based access control, and 2FA for enhanced security.",
+        "Integrated real-time market data from multiple crypto APIs and supported automated balance updates, CSV import/export, and exchange API integration.",
+        "Leveraged MongoDB and Redis for efficient data storage and caching, and BullMQ for background job processing.",
+        "Implemented comprehensive testing using Jest and Cypress, ensuring high code quality and reliability.",
+        "Containerized the application with Docker and orchestrated services using Docker Compose, demonstrating DevOps proficiency.",
+        "Followed best practices in code quality with ESLint, Prettier, and TypeScript, and maintained scalable, maintainable codebases across both frontend and backend."
+      ],
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -108,10 +116,16 @@
       ]
     },
     {
-      "title": "A Text Editor Written in C",
-      "summary": "",
+      "title": "Terminal Text Editor in C",
+      "summary": "Designed and implemented a lightweight terminal-based text editor in C, inspired by the 'kilo' editor.",
       "url": "https://coming-soon.com",
-      "highlights": ["Zero external dependencies."],
+      "highlights": [
+        "Developed robust terminal I/O handling using low-level POSIX APIs (termios, ioctl, unistd), enabling raw mode input, real-time keypress processing, and dynamic screen rendering.",
+        "Engineered custom screen drawing routines for efficient, flicker-free updates and responsive user experience.",
+        "Implemented cross-platform window size detection and cursor positioning logic, ensuring compatibility across various terminal environments.",
+        "Applied strong debugging and error-handling practices, including graceful recovery from system call failures.",
+        "Demonstrated expertise in systems programming, memory management, and Unix/Linux development tools."
+      ],
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -128,10 +142,17 @@
       ]
     },
     {
-      "title": "A Blog Website Written in Python/Flask",
-      "summary": "A web application to tracker cryptocurrency portfolios. It uses crypto APIs like CoinGecko to fetch real-time updates in the crypto space. Built with NestJS, React, Chart.js, PostgreSQL and Prisma ORM",
+      "title": "BenefitsHub Nigeria",
+      "summary": "Designed and developed a full-stack web application connecting Nigerian citizens with government benefits, featuring user authentication, profile management, benefit listings, and an admin dashboard. Tech Stack: Python, Flask, SQLAlchemy, HTML, CSS, JavaScript, Bootstrap, SQLite/PostgreSQL, Git.",
       "url": "https://coming-soon.com",
-      "highlights": ["It's super fast for getting updates and monitoring how your portfolios are performing."],
+      "highlights": [
+        "Engineered robust backend services using Flask and SQLAlchemy ORM, implementing RESTful routes, secure authentication, and role-based access for citizens and government agencies.",
+        "Built responsive, user-friendly interfaces with HTML, CSS, JavaScript, and Bootstrap, ensuring accessibility and seamless experience across devices.",
+        "Integrated search, filtering, and application workflows, enabling users to efficiently discover and apply for government benefits.",
+        "Automated deployment and managed environment configuration, leveraging best practices in version control (Git), database migrations, and environment management.",
+        "Centralized access to government benefits for Nigerian citizens, streamlining the application process and improving transparency.",
+        "Demonstrated ability to deliver end-to-end solutions, from requirements gathering to deployment and user support."
+      ],
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -146,6 +167,20 @@
           "caption": "Live Streams"
         }
       ]
+    },
+    {
+      "title": "Real-Time Collaborative Document Editor",
+      "summary": "Designed and developed a full-stack real-time collaborative document editing platform, enabling multiple users to edit documents simultaneously with instant updates and conflict resolution. Tech Stack: Node.js, Express, Socket.io, Prisma, PostgreSQL, JWT, React, Jest.",
+      "url": "https://coming-soon.com",
+      "highlights": [
+        "Architected a scalable backend using Node.js, Express, and Prisma ORM, implementing efficient document versioning and optimistic concurrency control to ensure data consistency during concurrent edits.",
+        "Engineered real-time communication with Socket.io, supporting room-based broadcasting and low-latency synchronization of document changes across all connected clients.",
+        "Implemented secure JWT-based authentication and role-based access control, safeguarding user sessions and document access.",
+        "Developed a modern, responsive frontend with React, providing intuitive document editing and real-time collaboration features.",
+        "Wrote comprehensive automated tests with Jest to ensure reliability and maintainability of both backend and real-time features.",
+        "Followed best practices in code quality, modular architecture, and error handling, resulting in a robust and maintainable codebase."
+      ],
+      "images": []
     }
   ],
   "volunteer_experience": [
