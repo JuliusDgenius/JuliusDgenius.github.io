@@ -50,11 +50,12 @@
       "url": "https:/wastedump.com",
       "start_date": "2024",
       "end_date": "present",
-      "summary": "",
+      "summary": "As a key member of a globally distributed agile team, I engineered mission-critical backend services for payment, notifications, and collections. I also led frontend/backend integration and enhanced application security through robust authentication measures.",
       "highlights": [
-        "Created and maintained back-end API services using NestJS.",
-        "Tasked with implementing Yoco payment gateway",
-        "Tasked with integrating email services API for system-wide transactional email feature"
+        "Architected and delivered critical backend services from the ground up, including a secure payment processing module, a scalable email notification system, and an automated collections service, forming the backbone of the application's financial operations.",
+        "Spearheaded the seamless integration between the frontend and backend systems, ensuring API consistency, optimal data flow, and a responsive, feature-rich user experience.",
+        "Enhanced application security by designing and implementing a robust authentication and authorization layer for the subscription service, protecting sensitive user data and controlling access to premium features.",
+        "Effectively collaborated in a globally distributed agile team to scope, design, and develop new features, successfully navigating time-zone differences to ensure timely delivery of product milestones."
       ]
     },
     {
@@ -63,10 +64,12 @@
       "url": "https://ncair.nitda.gov.ng/",
       "start_date": "2024",
       "end_date": "2024",
-      "summary": "",
+      "summary": "As a Python and Robotics Educator, I developed and led a project-based curriculum for high school students, mentoring them in building and programming embedded systems with Raspberry Pi Pico. My role involved fostering practical skills in software development, electronics, and problem-solving.",
       "highlights": [
-        "Guided students in Python programming by building interesting projexts with Raspberry Pi.",
-        "Provided tailored feedback to enhance coding comprehension and performance."
+        "Developed and delivered a hands-on, project-based curriculum for high school students on embedded systems using Python and Raspberry Pi Pico.",
+        "Mentored a cohort of students in programming fundamentals and electronics, guiding them from concept to completion on multiple robotics and IoT projects.",
+        "Fostered a collaborative learning environment that promoted critical thinking, problem-solving, and practical application of software engineering principles in a hardware context.",
+        "Provided expert instruction on Python programming for hardware control, GPIO pin management, and interfacing with sensors and actuators."
       ]
     },
     {
@@ -90,7 +93,7 @@
     {
       "title": "Cryptocurrency Portfolio Tracker",
       "summary": "Designed and developed a full-stack cryptocurrency portfolio management application for real-time investment tracking. Tech Stack: React, NestJS, TypeScript, MongoDB, Redis, Docker, Material UI, Chart.js, BullMQ, Jest.",
-      "url": "https://coming-soon.com",
+      "url": "https://github.com/JuliusDgenius/JuliusDgenius.github.io",
       "highlights": [
         "Built a modern, responsive frontend using React and Material UI, featuring interactive data visualizations with Chart.js and Recharts for portfolio performance, asset allocation, and historical analysis.",
         "Engineered a robust backend with NestJS and TypeScript, implementing secure JWT-based authentication, role-based access control, and 2FA for enhanced security.",
@@ -118,7 +121,7 @@
     {
       "title": "Terminal Text Editor in C",
       "summary": "Designed and implemented a lightweight terminal-based text editor in C, inspired by the 'kilo' editor.",
-      "url": "https://coming-soon.com",
+      "url": "https://github.com/JuliusDgenius/terminal-text-editor",
       "highlights": [
         "Developed robust terminal I/O handling using low-level POSIX APIs (termios, ioctl, unistd), enabling raw mode input, real-time keypress processing, and dynamic screen rendering.",
         "Engineered custom screen drawing routines for efficient, flicker-free updates and responsive user experience.",
@@ -144,7 +147,7 @@
     {
       "title": "BenefitsHub Nigeria",
       "summary": "Designed and developed a full-stack web application connecting Nigerian citizens with government benefits, featuring user authentication, profile management, benefit listings, and an admin dashboard. Tech Stack: Python, Flask, SQLAlchemy, HTML, CSS, JavaScript, Bootstrap, SQLite/PostgreSQL, Git.",
-      "url": "https://coming-soon.com",
+      "url": "https://github.com/JuliusDgenius/alx-portfolio_project",
       "highlights": [
         "Engineered robust backend services using Flask and SQLAlchemy ORM, implementing RESTful routes, secure authentication, and role-based access for citizens and government agencies.",
         "Built responsive, user-friendly interfaces with HTML, CSS, JavaScript, and Bootstrap, ensuring accessibility and seamless experience across devices.",
@@ -171,7 +174,7 @@
     {
       "title": "Real-Time Collaborative Document Editor",
       "summary": "Designed and developed a full-stack real-time collaborative document editing platform, enabling multiple users to edit documents simultaneously with instant updates and conflict resolution. Tech Stack: Node.js, Express, Socket.io, Prisma, PostgreSQL, JWT, React, Jest.",
-      "url": "https://coming-soon.com",
+      "url": "https://github.com/JuliusDgenius/real-time-document-editor",
       "highlights": [
         "Architected a scalable backend using Node.js, Express, and Prisma ORM, implementing efficient document versioning and optimistic concurrency control to ensure data consistency during concurrent edits.",
         "Engineered real-time communication with Socket.io, supporting room-based broadcasting and low-latency synchronization of document changes across all connected clients.",
@@ -186,21 +189,29 @@
   "volunteer_experience": [
     {
       "organization": "First Referral Hospital, Mutum Biyu.",
-      "position": "Medical Records Officer",
+      "position": "Laboratory Assistant & Medical Records Officer",
       "url": "https://thehospitalbook.com/first-referral-hospital/",
       "start_date": "2018",
       "end_date": "2020",
-      "summary": "Helped with medical records and information management for over 10,000 in and out patients.",
-      "highlights": []
+      "summary": "Initially leveraged my biochemistry background to support laboratory operations with patient testing, then transitioned to the medical records department where I managed sensitive patient data for over 10,000 individuals, showcasing adaptability and a commitment to data integrity.",
+      "highlights": [
+        "Applied scientific knowledge in a clinical laboratory setting to assist with diagnostic testing and sample processing.",
+        "Successfully transitioned roles to manage and maintain the hospital's patient information system, ensuring accuracy and confidentiality.",
+        "Contributed to the efficient operation of both clinical and administrative functions in a high-volume hospital environment."
+      ]
     },
     {
       "organization": "Nissis Vessels and Raphas Hands Foundations",
-      "position": "Logistics Manager",
+      "position": "Logistics Coordinator",
       "url": "https://nissi.foundation",
       "start_date": "2018",
       "end_date": "2018",
-      "summary": "Managed logistics and medical supplies at a free medical outreach to a Refugees camp for displaced Cameroonians in Cross River State.",
-      "highlights": []
+      "summary": "Served as a Logistics Coordinator for a critical medical outreach mission providing aid to displaced Cameroonian refugees. Coordinated the distribution of medical supplies and supported a multidisciplinary team of healthcare professionals.",
+      "highlights": [
+        "Managed the end-to-end logistics for the distribution of essential medical supplies in a challenging, resource-constrained environment.",
+        "Collaborated effectively with a diverse team of doctors, nurses, and other medical staff to ensure operational success of the humanitarian mission.",
+        "Played a key role in enabling the delivery of vital healthcare services to a vulnerable refugee population."
+      ]
     }
   ],
   "education": [
