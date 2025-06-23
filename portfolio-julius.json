@@ -306,21 +306,24 @@
   "references": [
     {
       "name": "Mr. Zakhele Shigonwe",
-      "company": "Wancemo Pty",
+      "company": "[Wancemo Pty](https://wancemo.co.za)",
+      "url": "https://wancemo.co.za",
       "position": "Founder/CEO",
       "email": "zakhele@wastedump.co.za",
       "phone_no": ""
     },
     {
       "name": "Mr. Benjamin Joshua",
-      "company": "Wancemo Pty",
+      "company": "[Wancemo Pty](https://wancemo.co.za)",
+      "url": "https://wancemo.co.za",
       "position": "Lead Engineer",
       "email": "benjamin@wastedump.co.za",
       "phone_no": "08107160494"
     },
     {
       "name": "Mr. Andrew Ushie",
-      "company": "Evidence Action",
+      "company": "[Evidence Action](https://www.evidenceaction.org/)",
+      "url": "https://www.evidenceaction.org/",
       "position": "Program Coordinator",
       "email": "andrew.ushie@evidenceaction.org",
       "phone_no": "08107160494"
