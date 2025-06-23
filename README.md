@@ -61,7 +61,11 @@ pip install -r requirements.txt
 
 ### 4. Customize Your Data
 
-Open the `portfolio-julius.json` file and replace the placeholder content with your own personal information. This includes your name, contact details, work experience, projects, skills, and more.
+This project uses a single JSON file to manage all your portfolio content.
+
+1.  **Create your data file:** Make a copy of the template file `portfolio.json.example` and rename it to `portfolio-your-name.json`.
+2.  **Fill in your details:** Open `portfolio-your-name.json` and replace the placeholder content with your own personal information. This includes your name, contact details, work experience, projects, skills, and more.
+
 
 Make sure to add your images (profile picture, project screenshots) to the `portfolio_media/` directory and update the paths in the JSON file accordingly.
 

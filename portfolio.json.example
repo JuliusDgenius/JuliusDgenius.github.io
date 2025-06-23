@@ -1,0 +1,139 @@
+{
+  "name": "Your Name",
+  "label": "Your Professional Title",
+  "base_url": "https://your-username.github.io",
+  "image_path": "portfolio_media/profile.JPG",
+  "contact": {
+    "email": "your.email@example.com",
+    "phone": "Your Phone Number",
+    "location": "Your City, Country"
+  },
+  "summary": {
+    "type": "bullets",
+    "content": [
+      "Your core competency 1",
+      "Your core competency 2",
+      "Your professional value proposition"
+    ]
+  },
+  "url": "127.0.0.1:5000",
+  "social_links": [
+    {
+      "label": "My Portfolio Website",
+      "url": "https://your-website.com",
+      "svg_path": "img/globe.svg"
+    },
+    {
+      "label": "Github",
+      "url": "https://github.com/your-username",
+      "svg_path": "img/github.svg"
+    }
+  ],
+  "about": "A brief and engaging paragraph about yourself.",
+  "work_experience": [
+    {
+      "company": "Company Name, City, Country",
+      "position": "Your Position",
+      "url": "https://company-website.com",
+      "start_date": "Year",
+      "end_date": "Year or present",
+      "summary": "A concise summary of your role and key responsibilities.",
+      "highlights": [
+        "A major accomplishment or contribution.",
+        "Another key achievement."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "My Awesome Project",
+      "summary": "A brief description of the project, its purpose, and the technologies used.",
+      "url": "https://github.com/your-username/your-project-repo",
+      "highlights": [
+        "A key feature or technical challenge you overcame.",
+        "Another interesting highlight."
+      ],
+      "images": [
+        {
+          "img_path": "portfolio_media/project_image.png",
+          "caption": "A caption for the image"
+        }
+      ]
+    }
+  ],
+  "volunteer_experience": [
+    {
+      "organization": "Organization Name",
+      "position": "Your Role",
+      "url": "https://organization-website.com",
+      "start_date": "Year",
+      "end_date": "Year",
+      "summary": "A brief summary of your volunteer work.",
+      "highlights": [
+        "Your key contribution."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Your University",
+      "location": "City, Country",
+      "url": "https://university-website.edu",
+      "degrees": [
+        "Your Degree"
+      ],
+      "honors": [],
+      "gpa_cumulative": "",
+      "gpa_major": "",
+      "graduation_date": "Year"
+    }
+  ],
+  "skills": [
+    {
+      "name": "A Skill (e.g., Python, Flask)",
+      "proficiency": 80,
+      "proficiency_label": "Proficient"
+    }
+  ],
+  "interests": [
+    {
+      "name": "An Interest",
+      "summary": "",
+      "images": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Language",
+      "fluency": "Fluency Level"
+    }
+  ],
+  "references": [
+    {
+      "name": "Reference Name",
+      "company": "Reference's Company",
+      "position": "Reference's Position",
+      "email": "reference.email@example.com",
+      "phone_no": "Reference's Phone Number (with permission)"
+    }
+  ],
+  "nav_links": [
+    {"url": "/", "text": "Home", "is_current": true},
+    {"url": "/resume.html", "text": "Resume", "is_resume": true},
+    {"url": "#about", "text": "About"},
+    {"url": "#projects", "text": "Projects"},
+    {"url": "#contact", "text": "Contact"},
+    {"url": "#experience", "text": "Work Experience"}
+  ],
+  "resume_link": {
+    "url": "/resume.html",
+    "text": "Download PDF Resume"
+  },
+  "footer_links": [
+    {"url": "/resume.html", "text": "Resume", "is_resume": true}
+  ],
+  "contact_form": {
+    "enabled": true,
+    "submit_url": "https://your-formspree-url"
+  }
+} 
