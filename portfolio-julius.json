@@ -87,6 +87,21 @@
         "Regulatory Compliance: Safety, and environmental regulations for logistics and weighing processes.",  
         "Record-Keeping: Maintain detailed records of shipments, weights, and transactions for audits and reporting."
       ]
+    },
+    {
+      "company": "Evidence Action",
+      "position": "Freelance Data Entry Clerk",
+      "url": "https://www.evidenceaction.org/",
+      "start_date": "2019",
+      "end_date": "2021",
+      "summary": "Provided accurate and timely data entry support for project operations, ensuring the integrity of records used for payment processing, monitoring & evaluation, and strategic decision-making.",
+      "highlights": [
+        "Entered and validated large volumes of project data into Excel spreadsheets with a high degree of accuracy.",
+        "Collaborated with project teams to ensure data completeness and resolve discrepancies.",
+        "Supported payment processing workflows by maintaining up-to-date and error-free records.",
+        "Contributed to monitoring and evaluation (M&E) efforts by preparing data for analysis and reporting.",
+        "Demonstrated strong attention to detail and confidentiality in handling sensitive project information."
+      ]
     }
   ],
   "projects": [
@@ -294,14 +309,21 @@
       "company": "Wance Pty",
       "position": "Founder/CEO",
       "email": "zakhele@wastedump.co.za",
-      "phone_no": "07047501126"
+      "phone_no": ""
     },
     {
       "name": "Benjamin",
       "company": "Wance Pty",
       "position": "Lead Engineer",
       "email": "benjamin@wastedump.co.za",
-      "phone_no": "07047501126"
+      "phone_no": "08107160494"
+    },
+    {
+      "name": "Mr. Andrew Ushie",
+      "company": "Evidence Action",
+      "position": "Program Coordinator",
+      "email": "andrew.ushie@evidenceaction.org",
+      "phone_no": "08107160494"
     }
   ],
   "nav_links": [
