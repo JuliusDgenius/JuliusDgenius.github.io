@@ -118,20 +118,7 @@
         "Containerized the application with Docker and orchestrated services using Docker Compose, demonstrating DevOps proficiency.",
         "Followed best practices in code quality with ESLint, Prettier, and TypeScript, and maintained scalable, maintainable codebases across both frontend and backend."
       ],
-      "images": [
-        {
-          "img_path": "portfolio_media/yt1.png",
-          "caption": "Main Channel"
-        },
-        {
-          "img_path": "portfolio_media/yt2.png",
-          "caption": "Tutorials"
-        },
-        {
-          "img_path": "portfolio_media/yt3.png",
-          "caption": "Live Streams"
-        }
-      ]
+      "images": []
     },
     {
       "title": "Terminal Text Editor in C",
@@ -144,20 +131,7 @@
         "Applied strong debugging and error-handling practices, including graceful recovery from system call failures.",
         "Demonstrated expertise in systems programming, memory management, and Unix/Linux development tools."
       ],
-      "images": [
-        {
-          "img_path": "portfolio_media/yt1.png",
-          "caption": "Main Channel"
-        },
-        {
-          "img_path": "portfolio_media/yt2.png",
-          "caption": "Tutorials"
-        },
-        {
-          "img_path": "portfolio_media/yt3.png",
-          "caption": "Live Streams"
-        }
-      ]
+      "images": []
     },
     {
       "title": "BenefitsHub Nigeria",
@@ -171,20 +145,7 @@
         "Centralized access to government benefits for Nigerian citizens, streamlining the application process and improving transparency.",
         "Demonstrated ability to deliver end-to-end solutions, from requirements gathering to deployment and user support."
       ],
-      "images": [
-        {
-          "img_path": "portfolio_media/yt1.png",
-          "caption": "Main Channel"
-        },
-        {
-          "img_path": "portfolio_media/yt2.png",
-          "caption": "Tutorials"
-        },
-        {
-          "img_path": "portfolio_media/yt3.png",
-          "caption": "Live Streams"
-        }
-      ]
+      "images": []
     },
     {
       "title": "Real-Time Collaborative Document Editor",
