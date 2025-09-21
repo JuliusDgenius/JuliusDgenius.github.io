@@ -120,15 +120,15 @@
       ],
       "images": [
 	      	  {
-          	  "img_path": "img/portfolio-screenshots/crytofolio-screenshot1.png",
+          	  "img_path": "img/portfolio-screenshots/cryptofolio-screenshot1.png",
 		          "caption": "Home Page"
 		        },
 		        {
-		          "img_path": "img/portfolio-screenshots/crytofolio-screenshot2.png",
+		          "img_path": "img/portfolio-screenshots/cryptofolio-screenshot2.png",
           	  "caption": "Portfolio Dashboard View"
         	  },
         	  {
-          	  "img_path": "img/portfolio-screenshots/crytofolio-screenshot3.png",
+          	  "img_path": "img/portfolio-screenshots/cryptofolio-screenshot3.png",
           	  "caption": "Portfolio Detail View"
         	  }
        ]
