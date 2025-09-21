@@ -108,7 +108,7 @@
     {
       "title": "Cryptocurrency Portfolio Tracker",
       "summary": "Designed and developed a full-stack cryptocurrency portfolio management application for real-time investment tracking. Tech Stack: React, NestJS, TypeScript, MongoDB, Redis, Docker, Material UI, Chart.js, BullMQ, Jest.",
-      "url": "https://github.com/JuliusDgenius/cryptocurrency-tracker-frontend",
+      "url": "https://cryptofolio-app.vercel.app",
       "highlights": [
         "Built a modern, responsive frontend using React and Material UI, featuring interactive data visualizations with Chart.js and Recharts for portfolio performance, asset allocation, and historical analysis.",
         "Engineered a robust backend with NestJS and TypeScript, implementing secure JWT-based authentication, role-based access control, and 2FA for enhanced security.",
@@ -118,7 +118,20 @@
         "Containerized the application with Docker and orchestrated services using Docker Compose, demonstrating DevOps proficiency.",
         "Followed best practices in code quality with ESLint, Prettier, and TypeScript, and maintained scalable, maintainable codebases across both frontend and backend."
       ],
-      "images": []
+      "images": [
+	      	  {
+          	    "img_path": "img/portfolio-screenshots/crytofolio-screenshot1.png",
+		    "caption": "Home Page"
+		  },
+		  {
+		    "img_path": "img/portfolio-screenshots/crytofolio-screenshot2.png",
+          	    "caption": "Portfolio Dashboard View"
+        	  },
+        	  {
+          	    "img_path": "img/portfolio-screenshots/crytofolio-screenshot3.png",
+          	    "caption": "Portfolio Detail View"
+        	  }
+               ]
     },
     {
       "title": "Terminal Text Editor in C",
