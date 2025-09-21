@@ -176,7 +176,7 @@
     },
     {
       "title": "A Country Search App",
-      "summary": "Developed a web app for viewing information snippets for any country in the world. Tech Stack: JavaScript.",
+      "summary": "Developed a web app for viewing information snippets for any country in the world. Tech Stack: JavaScript, HTML and CSS",
       "url": "https://country-search-app-orpin.vercel.app/",
       "highlights": [
         "A responsive web application using plain 'ol vanilla JavaScript and the fetch API for external API call.",
