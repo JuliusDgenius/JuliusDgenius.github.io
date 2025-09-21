@@ -120,18 +120,18 @@
       ],
       "images": [
 	      	  {
-          	    "img_path": "img/portfolio-screenshots/crytofolio-screenshot1.png",
-		    "caption": "Home Page"
-		  },
-		  {
-		    "img_path": "img/portfolio-screenshots/crytofolio-screenshot2.png",
-          	    "caption": "Portfolio Dashboard View"
+          	  "img_path": "img/portfolio-screenshots/crytofolio-screenshot1.png",
+		          "caption": "Home Page"
+		        },
+		        {
+		          "img_path": "img/portfolio-screenshots/crytofolio-screenshot2.png",
+          	  "caption": "Portfolio Dashboard View"
         	  },
         	  {
-          	    "img_path": "img/portfolio-screenshots/crytofolio-screenshot3.png",
-          	    "caption": "Portfolio Detail View"
+          	  "img_path": "img/portfolio-screenshots/crytofolio-screenshot3.png",
+          	  "caption": "Portfolio Detail View"
         	  }
-               ]
+       ]
     },
     {
       "title": "Terminal Text Editor in C",
