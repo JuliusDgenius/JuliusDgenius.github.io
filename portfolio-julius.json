@@ -173,6 +173,30 @@
         "Followed best practices in code quality, modular architecture, and error handling, resulting in a robust and maintainable codebase."
       ],
       "images": []
+    },
+    {
+      "title": "A Country Search App",
+      "summary": "Developed a web app for viewing information snippets for any country in the world. Tech Stack: JavaScript.",
+      "url": "https://country-search-app-orpin.vercel.app/",
+      "highlights": [
+        "A responsive web application using plain 'ol vanilla JavaScript and the fetch API for external API call.",
+        "Made external API calls to fetch country specific information",
+        "Expertly handled API response data and display same on the web page"
+      ],
+      "images": [
+	      	  {
+          	  "img_path": "img/portfolio-screenshots/country-app1.png",
+		          "caption": "Home Page"
+		        },
+		        {
+		          "img_path": "img/portfolio-screenshots/country-app2.png",
+          	  "caption": "Portfolio Dashboard View"
+        	  },
+        	  {
+          	  "img_path": "img/portfolio-screenshots/country-app2.png",
+          	  "caption": "Portfolio Detail View"
+        	  }
+       ]
     }
   ],
   "volunteer_experience": [
